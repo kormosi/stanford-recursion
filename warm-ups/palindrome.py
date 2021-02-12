@@ -1,8 +1,8 @@
 # 4. Write a recursive function that checks whether a string is a palindrome
-# (a palindrome isa string that's the same when reads forwards and backwards.)
+# (a palindrome is a string that's the same when reads forwards and backwards.)
 
 def is_palindrome(string):
-    if len(string) == 0 or len(string) == 1:
+    if len(string) < 2:
         return True
     elif string[0] == string[-1]:
         return is_palindrome(string[1:-1])
